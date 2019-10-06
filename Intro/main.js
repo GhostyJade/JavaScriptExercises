@@ -30,12 +30,12 @@ ElementsToAdd.forEach(e => {
 console.log([1,2,3].map(x => x*x))
 console.log([1,2,1,0,,234,3.14,3].filter(x => x<2))
 
-const test = "test value"
+const text = "test value"
 
 const a = {
     'test': 2,
     test2:3,
-    test
+    text
 }
 console.log(a)
 
