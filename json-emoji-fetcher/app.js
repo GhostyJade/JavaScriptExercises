@@ -42,7 +42,10 @@ const createRow = (e) => {
 }
 
 const getEmojis = () => {
-    fetch("emoji.json")/*("https://provajson--professorandrea.repl.co/emoji.json")*/
+    emojiCategory.value = ""
+    emojiName.value = ""
+    //fetch("emoji.json")
+    fetch("https://provajson--professorandrea.repl.co/emoji.json")
         .then(response => response.json())
         .then(body => {
             body.forEach(e=>emoticons.push(e))
